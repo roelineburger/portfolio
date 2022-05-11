@@ -3,6 +3,9 @@
 
 .portfolio-wrapper {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
 }
 
 .portfolio-title {
@@ -15,14 +18,9 @@
   justify-content: center;
 }
 
-.portfolio-skills {
-  width: 280px;
-  border: solid 1px black;
-}
-
 .portfolio-card {
   height: auto;
-  width: 280px;
+  width: 330px;
   border: solid 1px black;
   display: block;
 }
@@ -37,6 +35,14 @@
   cursor: pointer;
   outline: inherit;
   width: 100%;
+  padding: 16px 0;
+}
+
+.portfolio-card_btn:hover {
+  transition: all 0.2s ease, visibility 0s;
+  border: 1px solid #000000;
+  background: black;
+  color: white;
 }
 
 .holder {

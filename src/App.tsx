@@ -4,6 +4,7 @@ import "./App.css";
 import HomeBanner from "./Components/Home-Banner";
 import About from "./Components/About";
 import Portfolio from "./Components/Portfolio";
+import Skills from "./Components/Skills";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <HomeBanner />
       <About />
       <Portfolio />
+      <Skills />
     </div>
   );
 }

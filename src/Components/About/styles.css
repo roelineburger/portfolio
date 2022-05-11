@@ -1,11 +1,18 @@
 .about {
   display: flex;
+  justify-content: center;
+}
+
+.about-wrapper {
+  display: flex;
   border: solid 1px black;
   width: 1018px;
-  flex-direction: row;
+  padding: 60px;
 }
 
 .about-title {
+  color: red;
+  justify-content: e;
 }
 
 .about-text {
