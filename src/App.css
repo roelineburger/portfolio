@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=GFS+Didot&family=Oranienbaum&family=Questrial&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Questrial", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: content-box;
+}
+
+/* font-family: "GFS Didot", serif;
+font-family: "Oranienbaum", serif;
+font-family: "Questrial", sans-serif; */

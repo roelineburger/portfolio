@@ -1,0 +1,20 @@
+.about {
+  display: flex;
+  border: solid 1px black;
+  width: 1018px;
+  flex-direction: row;
+}
+
+.about-title {
+}
+
+.about-text {
+  width: 400px;
+  justify-content: center;
+  font-family: "Questrial", sans-serif;
+  font-weight: 200;
+}
+
+.about-img {
+  height: 600px;
+}

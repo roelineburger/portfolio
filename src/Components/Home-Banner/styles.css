@@ -1,0 +1,13 @@
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-image {
+  width: 400px;
+}
+
+.banner-text {
+  margin-right: auto;
+}
