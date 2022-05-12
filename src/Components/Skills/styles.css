@@ -1,5 +1,9 @@
 .skills {
-  background-color: #f6f6f8;
+  border: solid 1px black;
+  width: 1018px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .skills-title {
@@ -7,7 +11,4 @@
   font-size: 38px;
   font-weight: 100;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }

@@ -1,13 +1,46 @@
 .banner {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
 }
 
 .banner-image {
-  width: 400px;
+  height: 900px;
+  opacity: 0.9;
+}
+.banner-image2 {
+  opacity: 0.9;
+  height: 900px;
+}
+
+.banner-image3 {
+  opacity: 0.9;
+  height: 900px;
 }
 
 .banner-text {
-  margin-right: auto;
+  line-height: 0.4;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-70%, -50%);
+  z-index: 1;
+  text-align: left;
+  background-color: rgba(189, 146, 97, 0.5);
+  padding: 0 60px;
+}
+
+.banner-text-header1 {
+  font-size: 70px;
+  font-weight: 200;
+  font-family: "Questrial", sans-serif;
+}
+.banner-text-header2 {
+  font-size: 40px;
+  font-weight: 200;
+  font-family: "Questrial", sans-serif;
+}
+
+.banner-text-p {
+  font-family: "GFS Didot", serif;
+  font-size: 60px;
 }

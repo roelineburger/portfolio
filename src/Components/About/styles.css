@@ -1,27 +1,40 @@
 .about {
   display: flex;
   justify-content: center;
+  margin: 100px;
 }
 
 .about-wrapper {
   display: flex;
   border: solid 1px black;
   width: 1018px;
-  padding: 60px;
 }
 
 .about-title {
-  color: red;
-  justify-content: e;
+  font-family: "GFS Didot", serif;
+  font-size: 80px;
+  font-weight: 200;
+  margin: 0;
+  padding: 30px 40px 40px 40px;
 }
 
-.about-text {
-  width: 400px;
-  justify-content: center;
+.about-text-p {
   font-family: "Questrial", sans-serif;
   font-weight: 200;
+  width: 400px;
+  font-size: 20px;
+  padding: 30px 40px 40px 40px;
+}
+
+.about-text-p2 {
+  width: 400px;
+  padding: 0 40px 40px 40px;
+  font-size: 30px;
+  color: rgba(189, 146, 97);
+  font-family: "GFS Didot", serif;
 }
 
 .about-img {
-  height: 600px;
+  height: auto;
+  width: 50%;
 }
