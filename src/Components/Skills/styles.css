@@ -1,9 +1,13 @@
 .skills {
-  border: solid 1px black;
-  width: 1018px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  margin: 100px;
+}
+
+.skills-wrapper {
+  width: 1018px;
+  border: solid 1px black;
+  flex-wrap: wrap;
 }
 
 .skills-title {

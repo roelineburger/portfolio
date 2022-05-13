@@ -1,5 +1,4 @@
 .portfolio {
-  background-color: rgba(189, 146, 97, 0.5);
   margin-top: 100px;
 }
 
@@ -44,7 +43,7 @@
 
 .portfolio-card_btn:hover {
   transition: all 0.2s ease, visibility 0s;
-  background: rgba(189, 146, 97, 0.7);
+  background: black;
   color: white;
 }
 
