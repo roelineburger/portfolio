@@ -1,5 +1,5 @@
 import React from "react";
-
+import img from "./1.svg";
 import "./styles.css";
 
 const Portfolio = () => {
@@ -15,7 +15,7 @@ const Portfolio = () => {
         <article className="portfolio-card">
           <h1 className="holder"></h1>
           <p>RECIPE APP</p>
-          <button className="portfolio-card_btn">MORE</button>
+          <button className="portfolio-card_btn">MORE </button>
         </article>
         <article className="portfolio-card">
           <h1 className="holder"></h1>

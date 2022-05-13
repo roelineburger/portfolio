@@ -43,8 +43,7 @@
 
 .portfolio-card_btn:hover {
   transition: all 0.2s ease, visibility 0s;
-  background: black;
-  color: white;
+  background-color: rgba(189, 146, 97, 0.3);
 }
 
 .holder {

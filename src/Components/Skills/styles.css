@@ -5,14 +5,31 @@
 }
 
 .skills-wrapper {
-  width: 1018px;
+  display: flex;
   border: solid 1px black;
-  flex-wrap: wrap;
+  width: 1018px;
 }
 
 .skills-title {
   font-family: "GFS Didot", serif;
-  font-size: 38px;
-  font-weight: 100;
-  width: 100%;
+  font-size: 80px;
+  font-weight: 200;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.skills-check {
+  height: 25px;
+}
+
+.skills-img {
+  width: 50%;
+}
+
+.skills-text {
+  padding: 30px 40px 40px 40px;
+  line-height: 1.5;
 }
