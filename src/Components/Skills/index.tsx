@@ -60,6 +60,10 @@ const Skills = () => {
             </li>
             <li>
               <img className="skills-check" src={img2} />
+              Google Analytics
+            </li>
+            <li>
+              <img className="skills-check" src={img2} />
               AWS
             </li>
             <li>
