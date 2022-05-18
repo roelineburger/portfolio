@@ -22,8 +22,8 @@
 }
 
 .portfolio-card {
-  height: auto;
-  width: 330px;
+  height: 500px;
+  width: 400px;
   border: solid 1px black;
   display: block;
 }
@@ -39,15 +39,22 @@
   outline: inherit;
   width: 100%;
   padding: 16px 0;
+  max-height: 600px;
+}
+
+.card-text {
+  margin-left: 12px;
 }
 
 .portfolio-card_btn:hover {
   transition: all 0.2s ease, visibility 0s;
-  background-color: rgba(189, 146, 97, 0.3);
+  background-color: black;
+  color: white;
 }
 
 .holder {
   background-color: aquamarine;
   height: 300px;
+  width: 400px;
   margin: 0;
 }
