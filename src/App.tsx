@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./Components/Navbar";
+import Project from "./Components/Project";
 import "./App.css";
 import HomeBanner from "./Components/Home-Banner";
 import About from "./Components/About";

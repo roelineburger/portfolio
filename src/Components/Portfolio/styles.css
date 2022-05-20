@@ -28,7 +28,21 @@
   display: block;
 }
 
-.portfolio-card_btn {
+.card-text {
+  margin-left: 12px;
+}
+
+.holder {
+  background-color: aquamarine;
+  height: 300px;
+  width: 400px;
+  margin: 0;
+}
+
+.collapsible .content {
+  padding: 6px;
+}
+.collapsible .button {
   background: none;
   color: inherit;
   border: none;
@@ -38,23 +52,15 @@
   cursor: pointer;
   outline: inherit;
   width: 100%;
-  padding: 16px 0;
+  padding: 22px 0;
   max-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.card-text {
-  margin-left: 12px;
-}
-
-.portfolio-card_btn:hover {
+.collapsible .button:hover {
   transition: all 0.2s ease, visibility 0s;
   background-color: black;
   color: white;
-}
-
-.holder {
-  background-color: aquamarine;
-  height: 300px;
-  width: 400px;
-  margin: 0;
 }
