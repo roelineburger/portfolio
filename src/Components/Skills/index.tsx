@@ -2,7 +2,15 @@ import React from "react";
 import "./styles.css";
 
 import img from "./1.jpg";
+import img1 from "./2.png";
 import img2 from "./2.svg";
+import img3 from "./3.png";
+import img4 from "./4.png";
+import img5 from "./5.svg";
+import img6 from "./6.png";
+import img7 from "./7.png";
+import img8 from "./8.png";
+import img9 from "./9.webp";
 
 const Skills = () => {
   return (
@@ -19,37 +27,17 @@ const Skills = () => {
             Applied Technology in Sotckholm, Sweden. My skills currently
             include:
           </p>
-
+          <section className="skills-tags">
+            <img src={img1} width="auto" height="70" />
+            <img src={img3} width="auto" height="60" />
+            <img src={img4} width="auto" height="60" />
+            <img src={img5} width="auto" height="60" />
+            <img src={img6} width="auto" height="60" />
+            <img src={img7} width="auto" height="60" />
+            <img src={img8} width="auto" height="60" />
+            <img src={img9} width="auto" height="60" />
+          </section>
           <ul>
-            <li>
-              <img className="skills-check" src={img2} />
-              JavaScript
-            </li>
-            <li>
-              <img className="skills-check" src={img2} />
-              TypeScript
-            </li>
-            <li>
-              <img className="skills-check" src={img2} />
-              React
-            </li>
-            <li>
-              <img className="skills-check" src={img2} />
-              Redux
-            </li>
-            <li>
-              <img className="skills-check" src={img2} />
-              Webpack
-            </li>
-
-            <li>
-              <img className="skills-check" src={img2} />
-              Mocha/Jest
-            </li>
-            <li>
-              <img className="skills-check" src={img2} />
-              Docker
-            </li>
             <li>
               <img className="skills-check" src={img2} />
               Git+GitHub

@@ -1,14 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-import useCollapse from "react-collapsed";
 import img from "./1.svg";
 import "./styles.css";
 import img2 from "./recipe.png";
 import img3 from "./ubiquity.png";
 
 const Portfolio = () => {
-  const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
+  const [isExpanded, setExpanded] = useState(false);
+  const [isExpanded1, setExpanded1] = useState(false);
+
+  const handleClick = () => {
+    setExpanded((prevExpanded) => !prevExpanded);
+  };
+  const handleClick2 = () => {
+    setExpanded1((prevExpanded) => !prevExpanded);
+  };
+
+  useEffect(() => setExpanded((prevExpanded) => !prevExpanded), []);
 
   return (
     <div className="portfolio">
@@ -23,16 +32,30 @@ const Portfolio = () => {
             categories and then filter the recipes based on tag.
           </p>
           <div className="collapsible">
-            <div className="button" {...getToggleProps()}>
+            <button className="button" onClick={handleClick}>
+              {" "}
               {isExpanded ? "LESS" : "MORE"}
-            </div>
-            <div {...getCollapseProps()}>
-              <div className="content">
-                Now you can see the hidden content. <br />
-                <br />
-                Click again to hide...
-              </div>
-            </div>
+            </button>
+            {isExpanded && (
+              <>
+                <a
+                  href="https://github.com/roelineburger/hackday-react-recipes"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="portfolio-button"
+                >
+                  GITHUB
+                </a>
+                <a
+                  href="https://github.com/roelineburger/hackday-react-recipes"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="portfolio-button"
+                >
+                  LIVE SITE
+                </a>
+              </>
+            )}
           </div>
         </article>
         <article className="portfolio-card">
@@ -45,16 +68,30 @@ const Portfolio = () => {
             state in the URL.
           </p>
           <div className="collapsible">
-            <div className="button" {...getToggleProps()}>
-              {isExpanded ? "LESS" : "MORE"}
-            </div>
-            <div {...getCollapseProps()}>
-              <div className="content">
-                Now you can see the hidden content. <br />
-                <br />
-                Click again to hide...
-              </div>
-            </div>
+            <button className="button" onClick={handleClick2}>
+              {" "}
+              {isExpanded1 ? "LESS" : "MORE"}
+            </button>
+            {isExpanded1 && (
+              <>
+                <a
+                  href="https://github.com/roelineburger/ubiquiti"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="portfolio-button"
+                >
+                  GITHUB
+                </a>
+                <a
+                  href="https://roelineburger.github.io/ubiquiti/?view=list&query="
+                  target="_blank"
+                  rel="noreferrer"
+                  className="portfolio-button"
+                >
+                  LIVE SITE
+                </a>
+              </>
+            )}
           </div>
         </article>
       </div>

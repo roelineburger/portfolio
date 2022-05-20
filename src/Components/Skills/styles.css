@@ -17,8 +17,15 @@
   margin: 0;
 }
 
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
 ul {
   list-style-type: none;
+  padding: 0;
 }
 
 .skills-check {
@@ -32,4 +39,8 @@ ul {
 .skills-text {
   padding: 30px 40px 40px 40px;
   line-height: 1.5;
+}
+
+li {
+  display: flex;
 }

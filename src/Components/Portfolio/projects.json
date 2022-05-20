@@ -1,0 +1,14 @@
+{
+  "projects": [
+    {
+      "name": "Recipe App",
+      "description": "A Recipe app built with React, Nodejs, Mongo and Express. Functionality includes being able to add recipes, tag them in categories and then filter the recipes based on tag.",
+      "id": 1
+    },
+    {
+      "name": "Ubiquiti Device App",
+      "description": "A Front-end Device app built with React and Typescript. Functionality includes fetching the data from an endpoint, being able to search and filter a device concurrently. Also saving the state in the URL.",
+      "id": 1
+    }
+  ]
+}

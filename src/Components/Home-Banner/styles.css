@@ -1,32 +1,32 @@
 .banner {
   display: flex;
-  position: relative;
 }
 
 .banner-image {
   height: 900px;
   opacity: 0.9;
+  width: 33%;
 }
 .banner-image2 {
   opacity: 0.9;
   height: 900px;
+  width: 33%;
 }
 
 .banner-image3 {
   opacity: 0.9;
   height: 900px;
+  width: 34%;
 }
 
 .banner-text {
-  line-height: 0.4;
+  line-height: 0.8;
   position: absolute;
-  top: 50%;
-  left: 40%;
-  transform: translate(-70%, -50%);
   z-index: 1;
   text-align: left;
   background-color: rgba(189, 146, 97, 0.5);
-  padding: 0 60px;
+  padding: 0 80px;
+  margin-top: 15%;
 }
 
 .banner-text-header1 {
