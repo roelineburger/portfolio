@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect, forwardRef } from "react";
 import Navbar from "./Components/Navbar";
 import Project from "./Components/Project";
 import "./App.css";
@@ -8,17 +8,24 @@ import Portfolio from "./Components/Portfolio";
 import Skills from "./Components/Skills";
 import Footer from "./Components/Footer";
 
-function App() {
+const App = () => {
+  let portfolioRef = React.useRef() as React.MutableRefObject<HTMLInputElement>;
+
+  const scrollToPortfolio = () => {
+    if (!portfolioRef.current) return;
+    portfolioRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="App">
-      <Navbar />
+      <Navbar scrollToPortfolio={scrollToPortfolio} />
       <HomeBanner />
       <About />
-      <Portfolio />
+      <Portfolio ref={portfolioRef} />
       <Skills />
       <Footer />
     </div>
   );
-}
+};
 
 export default App;

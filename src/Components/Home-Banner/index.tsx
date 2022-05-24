@@ -14,9 +14,12 @@ const HomeBanner = () => {
           Inquisitive. Creator. Life-long learner.{" "}
         </p>
       </article>
-      <img className="banner-image" src={img} />
-      <img className="banner-image2" src={img2} />
-      <img className="banner-image3" src={img3} />
+      <article>
+        <img className="banner-image" src={img} />
+        <img className="banner-image2" src={img2} />
+        <img className="banner-image3" src={img3} />
+      </article>
+      <div className="down-arrow"></div>
     </div>
   );
 };

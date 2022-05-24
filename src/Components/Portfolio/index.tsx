@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { forwardRef, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import img from "./1.svg";
@@ -6,7 +6,7 @@ import "./styles.css";
 import img2 from "./recipe.png";
 import img3 from "./ubiquity.png";
 
-const Portfolio = () => {
+const Portfolio = ({ innerRef }: any) => {
   const [isExpanded, setExpanded] = useState(false);
   const [isExpanded1, setExpanded1] = useState(false);
 
@@ -21,7 +21,9 @@ const Portfolio = () => {
 
   return (
     <div className="portfolio">
-      <h1 className="portfolio-title">PORTFOLIO</h1>
+      <h1 className="portfolio-title" ref={innerRef}>
+        PORTFOLIO
+      </h1>
       <div className="portfolio-wrapper">
         <article className="portfolio-card">
           <img className="holder" src={img2} />
@@ -99,4 +101,6 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default forwardRef((props, ref) => (
+  <Portfolio {...props} innerRef={ref} />
+));
