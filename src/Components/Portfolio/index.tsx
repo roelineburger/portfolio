@@ -1,14 +1,13 @@
-import React, { forwardRef, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-
-import img from "./1.svg";
+import React, { forwardRef, useState } from "react";
 import "./styles.css";
 import img2 from "./recipe.png";
 import img3 from "./ubiquity.png";
+import img4 from "./puppies.png";
 
 const Portfolio = ({ innerRef }: any) => {
   const [isExpanded, setExpanded] = useState(false);
   const [isExpanded1, setExpanded1] = useState(false);
+  const [isExpanded2, setExpanded2] = useState(false);
 
   const handleClick = () => {
     setExpanded((prevExpanded) => !prevExpanded);
@@ -16,8 +15,9 @@ const Portfolio = ({ innerRef }: any) => {
   const handleClick2 = () => {
     setExpanded1((prevExpanded) => !prevExpanded);
   };
-
-  useEffect(() => setExpanded((prevExpanded) => !prevExpanded), []);
+  const handleClick3 = () => {
+    setExpanded2((prevExpanded) => !prevExpanded);
+  };
 
   return (
     <div className="portfolio">
@@ -26,7 +26,7 @@ const Portfolio = ({ innerRef }: any) => {
       </h1>
       <div className="portfolio-wrapper">
         <article className="portfolio-card">
-          <img className="holder" src={img2} />
+          <img className="holder" src={img2} alt="" />
           <h4 className="card-text">RECIPE APP</h4>
           <p className="card-text">
             A Recipe app built with React, Nodejs, Mongo and Express.
@@ -48,20 +48,12 @@ const Portfolio = ({ innerRef }: any) => {
                 >
                   GITHUB
                 </a>
-                <a
-                  href="https://github.com/roelineburger/hackday-react-recipes"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="portfolio-button"
-                >
-                  LIVE SITE
-                </a>
               </>
             )}
           </div>
         </article>
         <article className="portfolio-card">
-          <img className="holder" src={img3} />
+          <img className="holder" src={img3} alt="" />
           <h4 className="card-text">UBIQUITY DEVICE APP</h4>
           <p className="card-text">
             A Front-end Device app built with React and Typescript.
@@ -91,6 +83,33 @@ const Portfolio = ({ innerRef }: any) => {
                   className="portfolio-button"
                 >
                   LIVE SITE
+                </a>
+              </>
+            )}
+          </div>
+        </article>
+        <article className="portfolio-card">
+          <img className="holder" src={img4} alt="" />
+          <h4 className="card-text">PUPPIES APP</h4>
+          <p className="card-text">
+            A Puppies app built with React, Nodejs, TypeScript and Express.
+            Functionality includes being able to add, edit and delete a puppy.
+            Puppies are saved to a local .json file.
+          </p>
+          <div className="collapsible">
+            <button className="button" onClick={handleClick3}>
+              {" "}
+              {isExpanded2 ? "LESS" : "MORE"}
+            </button>
+            {isExpanded2 && (
+              <>
+                <a
+                  href="https://github.com/roelineburger/puppies-fullstack-app/tree/main"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="portfolio-button"
+                >
+                  GITHUB
                 </a>
               </>
             )}
