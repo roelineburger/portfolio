@@ -24,7 +24,10 @@ const Skills = () => {
             After being selected from 1000 applicants I completed an intensive
             three month training program for full stack web development with a
             focus on TDD, mob programming, and applied learning at the School of
-            Applied Technology in Sotckholm, Sweden. My skills currently
+            Applied Technology in Stockholm, Sweden. 
+            <br></br>
+            Strong background in Agile methodologies and a strong aptitude for UI, UX.
+            My skills currently
             include:
           </p>
           <section className="skills-tags">
@@ -40,31 +43,37 @@ const Skills = () => {
           <ul>
             <li>
               <img className="skills-check" src={img2} />
-              Git+GitHub
+              Frontend Development: React, JavaScript, TypeScript
             </li>
             <li>
               <img className="skills-check" src={img2} />
-              GitHub Actions
+              Project Management: Agile Methodologies, Scrum
+            </li><li>
+              <img className="skills-check" src={img2} />
+              UI Frameworks/Libraries: Material-UI
+            </li><li>
+              <img className="skills-check" src={img2} />
+              State Management: TanStack (React Query, Redux)
             </li>
             <li>
               <img className="skills-check" src={img2} />
-              Google Analytics
+              Version Control: Git, GitLab
             </li>
             <li>
               <img className="skills-check" src={img2} />
-              AWS
+              Issue Tracking: Jira
             </li>
             <li>
               <img className="skills-check" src={img2} />
-              Cloud Platforms (MongoDB Atlas, ElephantSQL, Netlify, Heroku)
+              Collaboration Tools: Confluence
             </li>
             <li>
               <img className="skills-check" src={img2} />
-              TDD
+              UI/UX Design Principles: Figma
             </li>
             <li>
               <img className="skills-check" src={img2} />
-              Agile work methods
+              Testing and Debugging: Sentry
             </li>
           </ul>
         </section>

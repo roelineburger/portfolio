@@ -1,5 +1,5 @@
 import React from "react";
-import img from "./2.jpeg";
+import img from "./3.jpeg";
 import "./styles.css";
 
 const About = () => {
@@ -19,18 +19,9 @@ const About = () => {
             MY WHY
           </h3>
           <p className="about-text-p">
-            “It is not the critic who counts: not the man who points out how the
-            strong man stumbles or where the doer of deeds could have done
-            better. The credit belongs to the man who is actually in the arena,
-            whose face is marred by dust and sweat and blood, who strives
-            valiantly, who errs and comes up short again and again, because
-            there is no effort without error or shortcoming, but who knows the
-            great enthusiasms, the great devotions, who spends himself in a
-            worthy cause; who, at the best, knows, in the end, the triumph of
-            high achievement, and who, at the worst, if he fails, at least he
-            fails while daring greatly, so that his place shall never be with
-            those cold and timid souls who knew neither victory nor defeat.”
-            —Theodore Roosevelt Speech at the Sorbonne, Paris, April 23, 1910
+            As a mother to my son, I am constantly inspired to build a better future through technology. Being a software developer allows me to contribute to shaping the world he will inherit, and that motivates me every day.
+            <br></br>         <br></br>
+           I believe in creating a diverse and inclusive environment where everyone has equal opportunities to thrive. Through my work and advocacy, I strive to break down barriers and foster a more inclusive tech community.  
           </p>
           <p className="about-text-p2" ref={ref1}>
             This is me daring greatly.
